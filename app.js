@@ -10,11 +10,16 @@ firstName: 'Allison',
 lastName: 'Powell'
 };
 
+const today = new Date();
+
 const element = (
-	<h1>Hello, {formatName(user)}!</h1>
+	<div className="col">
+		<p>Hello my name is, {formatName(user)}!</p>
+		<p>This Date is {today.toTimeString()}</p>
+	</div>
 );
 
 ReactDOM.render(
 element,
-document.getElementById('container')
+document.getElementsByClassName('col')[0]
 )

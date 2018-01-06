@@ -1,8 +1,44 @@
+* {
+	box-sizing:border-box;
+}
 body {
-font-family:Verdana;
-margin:0;}
+	font-family:Verdana;
+	margin:0;}
 
 h1,h2,h3,h4,h5,h6 {
-margin:0;
-color:pink;
+	margin:0;
+	color:pink;
+}
+
+header {
+	overflow:auto;
+	background-color:#2e2e2e;
+	border-bottom:5px solid pink;
+}
+header h1 {
+	text-align:center;
+}
+
+#container {
+	display:flex;
+	justify-content:flex-start;
+}
+
+.col {
+	height:200px;
+	position:relative;
+	z-index:9;
+	top:-5px;
+	background-color:#2e2e2e;
+	padding:5px;
+	width:200px;
+	color:pink;
+	border-right:5px solid pink;
+	border-bottom:5px solid pink;
+}
+
+article {
+	width:400px;
+	overflow:auto;
+	padding:10px;	
 }

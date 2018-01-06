@@ -959,15 +959,27 @@ var user = {
 	lastName: 'Powell'
 };
 
+var today = new Date();
+
 var element = _react2.default.createElement(
-	'h1',
-	null,
-	'Hello, ',
-	formatName(user),
-	'!'
+	'div',
+	{ className: 'col' },
+	_react2.default.createElement(
+		'p',
+		null,
+		'Hello my name is, ',
+		formatName(user),
+		'!'
+	),
+	_react2.default.createElement(
+		'p',
+		null,
+		'This Date is ',
+		today.toTimeString()
+	)
 );
 
-_reactDom2.default.render(element, document.getElementById('container'));
+_reactDom2.default.render(element, document.getElementsByClassName('col')[0]);
 
 /***/ }),
 /* 15 */
